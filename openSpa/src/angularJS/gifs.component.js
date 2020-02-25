@@ -10,6 +10,7 @@ angular
       $http
         .get('https://api.giphy.com/v1/gifs/search?q=cat&api_key=dc6zaTOxFJmzC')
         .then(response => {
+        console.log(response);
           vm.gifs = response.data.data;
         })
         .catch(err => {
