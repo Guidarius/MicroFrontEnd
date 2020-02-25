@@ -15,4 +15,10 @@ registerApplication(
   () => import('./src/navBar/navBar.app.js').then(module => module.navBar),
   () => true
 );
+
+registerApplication(
+  'angularJS', 
+  () => import ('./src/angularJS/angularJS.app.js'), 
+  () => {}
+);
 start()
