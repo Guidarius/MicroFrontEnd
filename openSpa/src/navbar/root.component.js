@@ -7,6 +7,7 @@ const NavBar = () => (
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><a href="/" onClick={navigateToUrl}>Home</a></li>
         <li><a href="/angularJS" onClick={navigateToUrl}>AngularJS</a></li>
+        <li><a href="/vue" onClick={navigateToUrl}>Vue</a></li>
       </ul>
     </div>
   </nav>
