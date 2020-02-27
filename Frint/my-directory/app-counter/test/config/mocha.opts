@@ -1,5 +1,0 @@
---colors
---compilers js:babel-register
---require frint-test-utils/register
---require ./test/config/bootstrap.js
---recursive
