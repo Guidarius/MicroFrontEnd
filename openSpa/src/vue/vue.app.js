@@ -21,3 +21,4 @@ export const mount = [
 export const unmount = [
   vueLifecycles.unmount,
 ];
+

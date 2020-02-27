@@ -13,6 +13,7 @@
     "angular-ui-router": "^1.0.25",
     "babel-loader": "^8.0.6",
     "install": "^0.13.0",
+    "mongodb": "^3.5.4",
     "npm": "^6.14.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
