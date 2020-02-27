@@ -17,6 +17,13 @@ import {
   transition: opacity 250ms ease-in;
 }
 */
+fetch("http://localhost:4000/items")
+.then(response => { 
+  response.json().then(data => {
+    console.log(data)
+  });
+})
+
 const AnimationExample = () => (
   <Router basename="/home">
     <Route
