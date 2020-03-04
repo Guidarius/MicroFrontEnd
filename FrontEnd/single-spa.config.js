@@ -33,4 +33,10 @@ registerApplication(
   pathPrefix('/vue')
 );
 
+registerApplication(
+  'about', 
+  () => import('./src/about/about.app.js'),
+  pathPrefix('/about')
+);
+
 start()

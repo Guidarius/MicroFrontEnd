@@ -23,7 +23,7 @@ server.listen(port, () => {
 
 db.initialize(dbName, collectionName, function(dbCollection) { // successCallback
     // get all items 
-    dbCollection.find().toArray(function(err, result) {
+    dbCollection.find().limit(50).toArray(function(err, result) {
         if (err) throw err;
         console.log(result)
         });
@@ -31,7 +31,7 @@ db.initialize(dbName, collectionName, function(dbCollection) { // successCallbac
     // << db CRUD routes >>
     server.get("/items", (request, response) => {
         // return updated list
-        dbCollection.find().toArray((error, result) => {
+        dbCollection.find().limit(50).toArray((error, result) => {
             if (error) throw error;
             response.json(result);
         });
